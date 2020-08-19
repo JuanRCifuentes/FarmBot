@@ -1,9 +1,7 @@
 # FarmBot
 
-![FarmBot Uniandes Logo](/Images/logo.png =200x)
-
 <p align="center">
-  <img src="/Images/logo.png" alt="Sublime's custom image"/>
+  <img src="/Images/logo.png" alt="FarmBot Uniandes Logo" width="200"/>
 </p>
 
 FarmBot Uniandes
