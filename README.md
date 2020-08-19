@@ -1,2 +1,2 @@
 # FarmBot
-FarmBot Uniandes
+FarmBot Uniandes by @JuanRCifuentes
