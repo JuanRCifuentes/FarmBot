@@ -11,6 +11,8 @@ import threading
 import time
 import Farmbot
 from tkinter import messagebox
+from serial import Serial
+
 
 class MainInterface:
     def __init__(self,master):

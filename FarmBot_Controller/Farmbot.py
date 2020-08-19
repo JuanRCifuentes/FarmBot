@@ -9,6 +9,8 @@ import Pots
 import threading
 import time
 import signal
+from serial import Serial
+
 
 class Farmbot:
     def __init__(self,PcomPort,PbaudRate):
