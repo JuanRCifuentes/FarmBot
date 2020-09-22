@@ -50,7 +50,7 @@ class MainInterface:
         
         #Varialbles del programa
         self.pararSensores = False
-        self.comPort="COM1"
+        self.comPort="COM2"
         self.baudRate=115200
         self.flag=0
         self.manualFlag=0
