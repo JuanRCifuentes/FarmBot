@@ -5,3 +5,5 @@
 * UML.jpg : Contiene el diagrama de clases del codigo en python
 
 Install package pyserial, not serial.
+
+Cuando los puertos estén siendo utilizados, se puede reiniciar el Kernel con ctrl + . en Spyder o en el menú en la opción "Restart Kernel".
