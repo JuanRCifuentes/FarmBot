@@ -38,29 +38,39 @@ para la programación en Python. Este programa se puede descargar
 siguiendo los pasos a continuación: Ingresar a la página
 www.anaconda.com
 
-<img align="center" width="70%" src="assets/images_usuario/Anaconda1.jpg">
+<p align="center">
+    <img width="70%" src="assets/images_usuario/Anaconda1.jpg">
+</p>
 
 En la pestaña de Products se debe seleccionar la opción Individual
 Edition:
 
-<img width="70%" src="assets/images_usuario/Anaconda2.png">
+<p align="center">
+    <img width="70%" src="assets/images_usuario/anaconda2.png">
+</p>
 
 Y en la última sección de la página, encuentra los instaladores para
 cada sistema operativo:
 
-<img align="center" width="70%" src="assets/images_usuario/Anaconda3.png">
+<p align="center">
+    <img width="70%" src="assets/images_usuario/anaconda3.png">
+</p>
 
 Después de seleccionar el instalador de acuerdo con su dispositivo, debe
 seguir los pasos de instalación de Anaconda y finalmente contara con la
 aplicación. Esta es la interfaz de la aplicación de ANACONDA:
 
-<img align="center" width="70%" src="assets/images_usuario/Anaconda4.png">
+<p align="center">
+    <img width="70%" src="assets/images_usuario/anaconda4.png">
+</p>
 
 En esta nos importa la sexta aplicación de la primera fila, Spyder. Para
 abrir Spyder basta con darle click en el botón "Launch" que se encuentra
 debajo de la descripción de este.
 
-<img align="center" width="70%" src="assets/images_usuario/Anaconda5.png">
+<p align="center">
+    <img width="70%" src="assets/images_usuario/anaconda5.png">
+</p>
 
 Una vez abierto Spyder, puede abrir los archivos de los códigos
 realizados en Python. Tenga en cuenta que es necesario que todos los
