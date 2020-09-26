@@ -1,3 +1,5 @@
+**Para ejecutar, abrir archivo Farmbot_Simulator.exe (acceso directo)**
+
 * Folder files: carpeta para guardar lo que deberia ir en la EEPROM
 * Folder images: Imagenes de la interfaz
 * Folder include: Folder con los archivos de cabecera de las distintas clases
