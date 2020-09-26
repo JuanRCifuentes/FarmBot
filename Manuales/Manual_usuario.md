@@ -1,23 +1,18 @@
-![image](1200px-University_of_Los_Andes_logo.png){#fig:1200px-universityoflosandeslogo
-width="0.1\\linewidth"}
-[\[fig:1200px-universityoflosandeslogo\]]{#fig:1200px-universityoflosandeslogo
-label="fig:1200px-universityoflosandeslogo"}
+<img align="ceter" width="100" src="assets/1200px-University_of_Los_Andes_logo.png">
 
-**LA UNIVERSIDAD DE LOS ANDES**\
+**UNIVERSIDAD DE LOS ANDES**\
 **FACULTAD DE INGENIERÍA**\
-**DEPARTAMENTO DE INGENIERÍA MECÁNICA**\
+**DEPARTAMENTO DE INGENIERÍA MECÁNICA**
 
 ------------------------------------------------------------------------
 
-\
+**Farmbot simulator: Manual de desarrollador**
 
-**Farmbot simulator: Manual de Usuario**\
-
-Estudiantes\
+Estudiantes:\
 ***Víctor Alexander Murcia Vargas***\
 201416659\
 ***Juan Felipe Palacios Sanchez***\
-201616389\
+201616389
 
 Asesor\
 **Giacomo Barbieri, PhD**
