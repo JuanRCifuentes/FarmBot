@@ -1,20 +1,20 @@
 <img align="ceter" width="100" src="assets/1200px-University_of_Los_Andes_logo.png">
 
-**LA UNIVERSIDAD DE LOS ANDES**
-**FACULTAD DE INGENIERÍA**
+**LA UNIVERSIDAD DE LOS ANDES**\
+**FACULTAD DE INGENIERÍA**\
 **DEPARTAMENTO DE INGENIERÍA MECÁNICA**
 
 ------------------------------------------------------------------------
 
 **Farmbot simulator: Manual de desarrollador**
 
-Estudiantes
-***Víctor Alexander Murcia Vargas***
-201416659
-***Juan Felipe Palacios Sanchez***
+Estudiantes:\
+***Víctor Alexander Murcia Vargas***\
+201416659\
+***Juan Felipe Palacios Sanchez***\
 201616389
 
-Asesor
+Asesor\
 **Giacomo Barbieri, PhD**
 
 Introducción
