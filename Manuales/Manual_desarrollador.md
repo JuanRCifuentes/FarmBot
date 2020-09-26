@@ -2,7 +2,7 @@
 
 **LA UNIVERSIDAD DE LOS ANDES**\
 **FACULTAD DE INGENIERÍA**\
-**DEPARTAMENTO DE INGENIERÍA MECÁNICA**\
+**DEPARTAMENTO DE INGENIERÍA MECÁNICA**
 
 ------------------------------------------------------------------------
 
