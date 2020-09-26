@@ -1,4 +1,4 @@
-![image](1200px-University_of_Los_Andes_logo.png){#fig:1200px-universityoflosandeslogo
+![image](assets/1200px-University_of_Los_Andes_logo.png){#fig:1200px-universityoflosandeslogo
 width="0.1\\linewidth"}
 [\[fig:1200px-universityoflosandeslogo\]]{#fig:1200px-universityoflosandeslogo
 label="fig:1200px-universityoflosandeslogo"}
