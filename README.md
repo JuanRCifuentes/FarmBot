@@ -6,5 +6,7 @@ FarmBot Uniandes
 
 <p align="center">
   Video Final: 
-  [![Video Final](https://img.youtube.com/vi/Vse9jw-zMMY/0.jpg)](https://www.youtube.com/watch?v=Vse9jw-zMMY)
+  <a href="https://www.youtube.com/watch?v=Vse9jw-zMMY">
+    <img src="https://img.youtube.com/vi/Vse9jw-zMMY/0.jpg" alt="FarmBot Uniandes Logo" width="200"/>
+  </a>
 </p>
