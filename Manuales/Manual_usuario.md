@@ -1,4 +1,4 @@
-<img align="ceter" width="100" src="assets/1200px-University_of_Los_Andes_logo.png">
+<img align="center" width="100" src="assets/1200px-University_of_Los_Andes_logo.png">
 
 **UNIVERSIDAD DE LOS ANDES**\
 **FACULTAD DE INGENIERÍA**\
@@ -43,7 +43,7 @@ www.anaconda.com
 En la pestaña de Products se debe seleccionar la opción Individual
 Edition:
 
-<img align="center" width="70%" src="assets/images_usuario/Anaconda2.png">
+<img width="70%" src="assets/images_usuario/Anaconda2.png">
 
 Y en la última sección de la página, encuentra los instaladores para
 cada sistema operativo:
