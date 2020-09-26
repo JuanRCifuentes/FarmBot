@@ -1,6 +1,6 @@
 <img align="ceter" width="100" src="assets/1200px-University_of_Los_Andes_logo.png">
 
-**LA UNIVERSIDAD DE LOS ANDES**\
+**UNIVERSIDAD DE LOS ANDES**\
 **FACULTAD DE INGENIERÍA**\
 **DEPARTAMENTO DE INGENIERÍA MECÁNICA**
 
