@@ -6,8 +6,6 @@
 
 ------------------------------------------------------------------------
 
-\
-
 **Farmbot simulator: Manual de desarrollador**\
 
 Estudiantes\
