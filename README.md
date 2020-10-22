@@ -10,3 +10,5 @@ A continuación el video final hecho por Alexander Murcia y Felipe Palacios
     <img src="https://img.youtube.com/vi/Vse9jw-zMMY/0.jpg" alt="FarmBot Uniandes Logo" width="300"/>
   </a>
 </p>
+
+Using Pyenv to manage python version. Python 3.8.5 for FarmBot_WebApp
