@@ -12,10 +12,11 @@ import time
 import Farmbot
 from tkinter import messagebox
 from serial import Serial
-
+from flask import Flask
 
 class MainInterface:
     def __init__(self,master):
+        
         self.mainWindow=master
         
         #Titulo de la interfaz
@@ -68,7 +69,6 @@ class MainInterface:
         self.threadManual= threading.Thread(target= self.moveManualFunc)
         self.threadWaterPots= threading.Thread(target= self.farmbot.moveAuto)
         
-        
     #Funciones para los botones
 
     def ClickStart(self):
@@ -102,7 +102,6 @@ class MainInterface:
                 
         else:
             print("Farmbot Already Started")
-        
     def read_writeSensores(self):
         #leer sensores
 
@@ -118,7 +117,7 @@ class MainInterface:
         self.sensorFrame.subSensorFrame4.lblSensor44.config(
             text=str(int(self.farmbot.ValPins[93]*100/1023))+' %')
             
-        #Espera 30 seg para volver a leer los sensores
+    #Espera 30 seg para volver a leer los sensores
     def moveManualFunc(self):
         while(self.manualFlag):
             windowTemp=tk.Toplevel(self.mainWindow)
@@ -141,8 +140,6 @@ class MainInterface:
                 self.read_writeSensores()
 
             time.sleep(10)#5s sleep
-                
-        
     def ClickStop(self):
         if self.stopFlag==0 and self.startFlag==1:
             self.startFlag=0
@@ -159,7 +156,6 @@ class MainInterface:
             self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#61605c") 
 
             print("Stop")
-        
     def ClickAuto(self):
         if self.manualFlag==1 and self.autoFlag==0 and self.startFlag==1:
             self.manualFlag=0
@@ -171,7 +167,6 @@ class MainInterface:
                 self.threadAuto=threading.Thread(target= self.moveAutoFunc)
             self.threadAuto.start()
         print("Auto")
-            
     def ClickManual(self):
         if self.manualFlag==0 and self.autoFlag==1 and self.startFlag==1:
             self.autoFlag=0
@@ -187,14 +182,12 @@ class MainInterface:
                 self.threadManual=threading.Thread(target=self.moveManualFunc)
             self.threadManual.start()
         print("Manual")
-        
     def ClickHome(self):
         if self.manualFlag ==1:
             self.farmbot.move()
             print("Home")
         else:
             print("Farmbot is in autoMode please go to Manual")
-        
     def ClickWater(self):
         if(self.flag==0 and self.manualFlag ==1):    
             self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#FFFD00")
@@ -208,8 +201,6 @@ class MainInterface:
             print("No Water")
         elif(self.autoFlag):
             messagebox.showerror("Error Watering","Farmbot Must Be in manual mode")
-            
-
     def ClickXup(self):
         print("xUp")
         if(self.autoFlag==1 and self.startFlag==1):
@@ -240,7 +231,6 @@ class MainInterface:
             self.farmbot.move(x=self.farmbot.posX,
                               y=self.farmbot.posY+100,
                               z=self.farmbot.posZ)
-            
     def ClickYdown(self):
         print("yDown")
         if(self.autoFlag==1 and self.startFlag==1):
@@ -271,6 +261,8 @@ class MainInterface:
             self.farmbot.move(x=self.farmbot.posX ,
                               y=self.farmbot.posY,
                               z=self.farmbot.posZ-100)
+            
+
 
 class ModesFrame(tk.Frame):
     
@@ -525,17 +517,27 @@ class AutoManFrame(tk.Frame):
         self.btnAuto.grid(column=0, row=0)
         self.btnManual.grid(column=0, row=1)
     
-        
-        
-    
-    
-   
 
 #Crear Ventana Principal
 mainWindow= Tk()
 gui=MainInterface(mainWindow)
+
+app = Flask(__name__)
+
+
+@app.route("/")
+@app.route("/home")
+def home():
+    return "<h1>Home Page</h1>"
+
+
+@app.route("/about")
+def about():
+    return "<h1>About Page</h1>"
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 mainWindow.mainloop()
-
-
-
 
