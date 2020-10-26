@@ -1,0 +1,90 @@
+Mon Oct 26 10:14:02 2020 - -----
+Mon Oct 26 10:14:02 2020 - Sensor 4: N.A. => 33 %
+Mon Oct 26 10:14:02 2020 - Sensor 3: N.A. => 31 %
+Mon Oct 26 10:14:02 2020 - Sensor 2: N.A. => 54 %
+Mon Oct 26 10:14:02 2020 - Sensor 1: N.A. => 74 %
+Mon Oct 26 10:13:58 2020 - -----
+Mon Oct 26 10:13:58 2020 - Reading
+Mon Oct 26 10:13:58 2020 - initiated serial port
+Mon Oct 26 10:13:57 2020 - Start
+Mon Oct 26 10:13:57 2020 - Clicked Start
+Mon Oct 26 10:13:57 2020 - 
+Mon Oct 26 10:12:24 2020 - 192.168.0.15
+Mon Oct 26 10:12:19 2020 - 192.168.0.15
+Mon Oct 26 10:12:14 2020 - 192.168.0.15
+Mon Oct 26 10:12:08 2020 - 192.168.0.15
+Mon Oct 26 10:12:03 2020 - 192.168.0.15
+Mon Oct 26 10:11:58 2020 - 192.168.0.15
+Mon Oct 26 10:06:30 2020 - Somebody connected
+Mon Oct 26 10:06:28 2020 - Somebody connected
+Mon Oct 26 10:06:08 2020 - Farmbot Already Started
+Mon Oct 26 10:06:08 2020 - Clicked Start
+Mon Oct 26 10:06:08 2020 - 
+Mon Oct 26 10:06:04 2020 - -----
+Mon Oct 26 10:06:04 2020 - Reading
+Mon Oct 26 10:06:04 2020 - initiated serial port
+Mon Oct 26 10:06:03 2020 - Start
+Mon Oct 26 10:06:03 2020 - Clicked Start
+Mon Oct 26 10:06:03 2020 - 
+Mon Oct 26 10:05:57 2020 - Error Starting Farmbot
+Mon Oct 26 10:05:57 2020 - -----
+Mon Oct 26 10:05:57 2020 - Reading
+Mon Oct 26 10:05:57 2020 - initiated serial port
+Mon Oct 26 10:05:52 2020 - Start
+Mon Oct 26 10:05:52 2020 - Clicked Start
+Mon Oct 26 10:05:52 2020 - 
+Mon Oct 26 10:05:48 2020 - Clicked Stop
+Mon Oct 26 10:05:32 2020 - Somebody connected
+Mon Oct 26 10:05:31 2020 - Somebody connected
+Mon Oct 26 10:05:30 2020 - Somebody connected
+Mon Oct 26 10:03:03 2020 - -----
+Mon Oct 26 10:03:03 2020 - Sensor 1: 35 % => 74 %
+Mon Oct 26 10:02:53 2020 - Somebody connected
+Mon Oct 26 10:02:39 2020 - Somebody connected
+Mon Oct 26 10:02:32 2020 - Somebody connected
+Mon Oct 26 10:02:28 2020 - Somebody connected
+Mon Oct 26 10:02:19 2020 - Somebody connected
+Mon Oct 26 10:01:01 2020 - -----
+Mon Oct 26 10:01:01 2020 - Sensor 1: 80 % => 35 %
+Mon Oct 26 09:57:22 2020 - -----
+Mon Oct 26 09:57:22 2020 - Sensor 3: 84 % => 31 %
+Mon Oct 26 09:57:22 2020 - Sensor 1: 29 % => 80 %
+Mon Oct 26 09:56:21 2020 - -----
+Mon Oct 26 09:56:21 2020 - Sensor 1: 80 % => 29 %
+Mon Oct 26 09:55:59 2020 - -----
+Mon Oct 26 09:55:59 2020 - Reading
+Mon Oct 26 09:55:59 2020 - initiated serial port
+Mon Oct 26 09:55:58 2020 - Start
+Mon Oct 26 09:55:58 2020 - Clicked Start
+Mon Oct 26 09:55:58 2020 - 
+Mon Oct 26 09:55:55 2020 - Somebody connected
+Mon Oct 26 09:55:40 2020 - Clicked Stop
+Mon Oct 26 09:55:29 2020 - Somebody connected
+Mon Oct 26 09:55:19 2020 - Somebody connected
+Mon Oct 26 09:54:33 2020 - Somebody connected
+Mon Oct 26 09:53:43 2020 - -----
+Mon Oct 26 09:53:43 2020 - Sensor 4: N.A. => 33 %
+Mon Oct 26 09:53:43 2020 - Sensor 3: N.A. => 84 %
+Mon Oct 26 09:53:43 2020 - Sensor 2: N.A. => 54 %
+Mon Oct 26 09:53:43 2020 - Sensor 1: N.A. => 80 %
+Mon Oct 26 09:53:39 2020 - -----
+Mon Oct 26 09:53:39 2020 - Reading
+Mon Oct 26 09:53:39 2020 - initiated serial port
+Mon Oct 26 09:53:38 2020 - Start
+Mon Oct 26 09:53:38 2020 - Clicked Start
+Mon Oct 26 09:53:38 2020 - 
+Mon Oct 26 09:53:30 2020 - Somebody connected
+Mon Oct 26 09:51:33 2020 - Somebody connected
+Mon Oct 26 09:51:12 2020 - Somebody connected
+Mon Oct 26 09:47:09 2020 - -----
+Mon Oct 26 09:47:09 2020 - Sensor 4: N.A. => 33 %
+Mon Oct 26 09:47:09 2020 - Sensor 3: N.A. => 84 %
+Mon Oct 26 09:47:09 2020 - Sensor 2: N.A. => 54 %
+Mon Oct 26 09:47:09 2020 - Sensor 1: N.A. => 80 %
+Mon Oct 26 09:47:05 2020 - -----
+Mon Oct 26 09:47:05 2020 - Reading
+Mon Oct 26 09:47:05 2020 - initiated serial port
+Mon Oct 26 09:47:04 2020 - Start
+Mon Oct 26 09:47:04 2020 - Clicked Start
+Mon Oct 26 09:47:04 2020 - 
+Mon Oct 26 09:46:51 2020 - Somebody connected
