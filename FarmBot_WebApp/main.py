@@ -1,5 +1,4 @@
 import Farmbot
-import socket
 import threading
 import time
 import datetime
@@ -9,9 +8,6 @@ sensor1 = "SENSOR 1";
 
 class MainInterface:
     def __init__(self):
-        
-        self.hostname = socket.gethostname()
-        self.local_ip = socket.gethostbyname(self.hostname)
         
         self.sensor1 = "N.A.";
         self.sensor2 = "N.A.";
@@ -109,6 +105,10 @@ class MainInterface:
     #Espera 30 seg para volver a leer los sensores
     def moveManualFunc(self):
         while(self.manualFlag):
+            
+            file = open("farmbotLogs.txt","w")
+            file.close()
+            
             self.farmbot.updateHumiditySensors()
             self.read_writeSensores()
             for i in range(60):
@@ -133,13 +133,13 @@ class MainInterface:
             self.farmbot.endCommunication()
             self.threat_receive.join()
             self.farmbot.closeSerialPort()
-            self.pararSensores = False
+            # self.pararSensores = False
         
-            self.ledsFrame.cnvLedOff.create_oval(25,10,75,60, fill="#FF0000")
-            self.ledsFrame.cnvLedOn.create_oval(25,10,75,60, fill="#61605c")
-            self.ledsFrame.cnvLedAuto.create_oval(25,10,75,60, fill="#61605c")
-            self.ledsFrame.cnvLedManu.create_oval(25,10,75,60, fill="#61605c")
-            self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#61605c") 
+            # self.ledsFrame.cnvLedOff.create_oval(25,10,75,60, fill="#FF0000")
+            # self.ledsFrame.cnvLedOn.create_oval(25,10,75,60, fill="#61605c")
+            # self.ledsFrame.cnvLedAuto.create_oval(25,10,75,60, fill="#61605c")
+            # self.ledsFrame.cnvLedManu.create_oval(25,10,75,60, fill="#61605c")
+            # self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#61605c") 
 
             print("Stop")
     def ClickAuto(self):
@@ -147,8 +147,8 @@ class MainInterface:
             self.manualFlag=0
             self.autoFlag=1
             self.threadManual.join()
-            self.ledsFrame.cnvLedAuto.create_oval(25,10,75,60, fill="#FFFD00")
-            self.ledsFrame.cnvLedManu.create_oval(25,10,75,60, fill="#61605c")
+            # self.ledsFrame.cnvLedAuto.create_oval(25,10,75,60, fill="#FFFD00")
+            # self.ledsFrame.cnvLedManu.create_oval(25,10,75,60, fill="#61605c")
             if not self.threadAuto.isAlive():
                 self.threadAuto=threading.Thread(target= self.moveAutoFunc)
             self.threadAuto.start()
@@ -162,8 +162,8 @@ class MainInterface:
                 self.threadAuto.join()
             if self.threadWaterPots.is_alive():    
                 self.threadWaterPots.join()
-            self.ledsFrame.cnvLedManu.create_oval(25,10,75,60, fill="#FFFD00")
-            self.ledsFrame.cnvLedAuto.create_oval(25,10,75,60, fill="#61605c")
+            # self.ledsFrame.cnvLedManu.create_oval(25,10,75,60, fill="#FFFD00")
+            # self.ledsFrame.cnvLedAuto.create_oval(25,10,75,60, fill="#61605c")
             if not self.threadManual.is_alive():
                 self.threadManual=threading.Thread(target=self.moveManualFunc)
             self.threadManual.start()
@@ -176,19 +176,19 @@ class MainInterface:
             print("Farmbot is in autoMode please go to Manual")
     def ClickWater(self):
         if(self.flag==0 and self.manualFlag ==1):    
-            self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#FFFD00")
+            # self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#FFFD00")
             self.flag=1
             self.farmbot.water(1)
             print("Water")
         elif(self.flag==1 and self.manualFlag ==1):
-            self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#61605c")
+            # self.ledsFrame.cnvLedWater.create_oval(25,10,75,60, fill="#61605c")
             self.flag=0
             self.farmbot.water(0)
             print("No Water")
         elif(self.autoFlag):
             superLog("Error Watering" + "Farmbot Must Be in manual mode")
     def ClickXup(self):
-        print("xUp")
+        superLog("xUp")
         if(self.autoFlag==1 and self.startFlag==1):
             superLog("Error " + "Farmbot Must Be in manual mode")
         elif(self.startFlag==0):
@@ -262,18 +262,84 @@ def home():
     return crearPagina()
 
 @app.route('/start/', methods=['GET', 'POST'])
-def clickStart1():
+def clickStart():
     superLog("")
     superLog("Clicked Start");
     inte.ClickStart()
     return crearPagina()
- 
+
 @app.route('/stop/', methods=['GET', 'POST'])
-def clickStop1():
+def clickStop():
     superLog("Clicked Stop");
     inte.ClickStop()
     superLog("")
     return crearPagina()
+
+@app.route('/homebtn/', methods=['GET', 'POST'])
+def clickHome():
+    superLog("")
+    superLog("Clicked Home");
+    inte.ClickHome()
+    return crearPagina()
+
+@app.route('/water/', methods=['GET', 'POST'])
+def clickWater():
+    superLog("Clicked Watering");
+    inte.ClickWater()
+    superLog("")
+    return crearPagina()
+
+@app.route('/auto/', methods=['GET', 'POST'])
+def clickAuto():
+    superLog("Clicked Auto");
+    inte.ClickAuto()
+    superLog("")
+    return crearPagina()
+
+@app.route('/manual/', methods=['GET', 'POST'])
+def clickManual():
+    superLog("Clicked Manual");
+    inte.ClickManual()
+    superLog("")
+    return crearPagina()
+
+@app.route('/moveXUp/', methods=['GET', 'POST'])
+def moveXUp():
+    superLog("Clicked x up");
+    inte.ClickXup()
+    return crearPagina()
+
+@app.route('/moveXDown/', methods=['GET', 'POST'])
+def moveXDown():
+    superLog("Clicked x down");
+    inte.ClickXdown()
+    return crearPagina()
+
+@app.route('/moveYUp/', methods=['GET', 'POST'])
+def moveYUp():
+    superLog("Clicked y up");
+    inte.ClickYup()
+    return crearPagina()
+
+@app.route('/moveYDown/', methods=['GET', 'POST'])
+def moveYDown():
+    superLog("Clicked y down");
+    inte.ClickYdown()
+    return crearPagina()
+
+@app.route('/moveZUp/', methods=['GET', 'POST'])
+def moveZUp():
+    superLog("Clicked z up");
+    inte.ClickZup()
+    return crearPagina()
+
+@app.route('/moveZDown/', methods=['GET', 'POST'])
+def moveZDown():
+    superLog("Clicked z down");
+    inte.ClickZdown()
+    return crearPagina()
+ 
+
 
 def crearPagina():
     sensor = {
@@ -282,7 +348,7 @@ def crearPagina():
     'p3': inte.sensor3,
     'p4': inte.sensor4
     }
-    return render_template('page.html', sensor=sensor, local_ip=inte.local_ip);
+    return render_template('page.html', sensor=sensor);
          
 def superLog(mensaje):
     with open("logs.txt", 'r+') as f:
